@@ -34,29 +34,31 @@ Follow these steps to set up the project on your local machine:
 ```bash
 git clone https://github.com/rasool321/Blog.git
 cd Blog
-2. (Optional) Create a Virtual Environment
-bash
-Copy
-Edit
+```
+
+### 2. (Optional) Create a Virtual Environment
+```bash
 python -m venv venv
 source venv/bin/activate  # For Windows: venv\Scripts\activate
-3. Install Required Packages
-bash
-Copy
-Edit
+```
+
+### 3. Install Required Packages
+```bash
 pip install -r requirements.txt
+```
+
 Or install manually:
-
-bash
-Copy
-Edit
+```bash
 pip install Flask Flask-WTF Flask-SQLAlchemy Flask-Bcrypt Flask-Login Pillow itsdangerous Flask-Mail
-Configuration
-Before running the app, you need to configure environment variables. You can do this using a .env file or by setting them manually:
+```
 
-env
-Copy
-Edit
+---
+
+## Configuration
+
+Before running the app, you need to configure environment variables. You can do this using a `.env` file or by setting them manually:
+
+```env
 SECRET_KEY=your_secret_key
 SQLALCHEMY_DATABASE_URI=sqlite:///site.db
 MAIL_SERVER=smtp.gmail.com
@@ -64,51 +66,66 @@ MAIL_PORT=587
 MAIL_USE_TLS=True
 MAIL_USERNAME=your_email@gmail.com
 MAIL_PASSWORD=your_email_password_or_app_password
-Running the Application
+```
+
+---
+
+## Running the Application
+
 Use the following command to start the Flask development server:
 
-bash
-Copy
-Edit
+```bash
 python run.py
+```
+
 Once running, open your browser and navigate to:
 
-cpp
-Copy
-Edit
+```
 http://127.0.0.1:5000
-Tech Stack
-Technology	Purpose
-Flask	Web framework
-Flask-WTF	Form handling
-Flask-SQLAlchemy	ORM for database operations
-Flask-Bcrypt	Password hashing
-Flask-Login	User authentication
-Pillow	Image processing (profile uploads)
-itsdangerous	Token generation (e.g., password reset)
-Flask-Mail	Sending emails
+```
 
-Contributing
+---
+
+## Tech Stack
+
+| Technology         | Purpose                              |
+|--------------------|--------------------------------------|
+| Flask              | Web framework                        |
+| Flask-WTF          | Form handling                        |
+| Flask-SQLAlchemy   | ORM for database operations          |
+| Flask-Bcrypt       | Password hashing                     |
+| Flask-Login        | User authentication                  |
+| Pillow             | Image processing (profile uploads)   |
+| itsdangerous       | Token generation (e.g., password reset) |
+| Flask-Mail         | Sending emails                       |
+
+---
+
+## Contributing
+
 We welcome contributions. Follow these steps to get started:
 
-Fork the repository
-
-Create a new branch
+1. Fork the repository  
+2. Create a new branch  
+```bash
 git checkout -b feature/your-feature
-
-Make your changes
-
-Commit your changes
+```
+3. Make your changes  
+4. Commit your changes  
+```bash
 git commit -m "Add your feature"
-
-Push to your branch
+```
+5. Push to your branch  
+```bash
 git push origin feature/your-feature
+```
+6. Open a pull request
 
-Open a pull request
+---
 
-Contact
+## Contact
+
 Developed by Rasool
 
-GitHub: @rasool321
-
-Email: srasool6371@gmail.com
+- GitHub: [@rasool321](https://github.com/rasool321)  
+- Email: srasool6371@gmail.com
