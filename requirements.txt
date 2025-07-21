@@ -1,12 +1,15 @@
-pip install flask
-pip install flask-WTF
+
+Flask
+Flask-WTF
+Flask-SQLAlchemy
+Flask-Bcrypt
+Flask-Login
+Pillow
+itsdangerous
+Flask-Mail
+
+---cmds---
 import secrets
 secrets.token_hex(16)
-pip install flask-SQLAlchemy
 from filename import db
 tree - cmd 
-pip install flask-bcrypt
- pip install flask-login
- pip install pillow
- pip install itsdangerous
- pip install flask - mail
